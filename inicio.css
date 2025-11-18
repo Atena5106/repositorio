@@ -1,0 +1,132 @@
+:root {
+  --bg: #eef1f6;
+  --card-bg: #ffffff;
+  --border: #d1d5db;
+  --border-focus: #3b82f6;
+  --text: #111827;
+  --muted: #6b7280;
+  --button: #3b82f6;
+  --button-hover: #265ecf;
+  --radius: 0.75rem;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+}
+
+.login-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.login-title {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+/* Inputs */
+.field-group {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.field-spacing {
+  margin-bottom: 1rem;
+}
+
+.field-addon {
+  background: #f3f4f6;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-right: none;
+  color: var(--muted);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.field-control {
+  flex: 1;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  font-size: 1rem;
+  outline: none;
+  color: var(--text);
+}
+
+.field-control:focus {
+  border-color: var(--border-focus);
+}
+
+/* Botón */
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: var(--button);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.login-button:hover {
+  background: var(--button-hover);
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.login-footer a {
+  color: var(--border-focus);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+  margin-left: -1px;
+}
+
+/* Focus */
+.field-control:focus {
+  border-color: var(--field-border-focus);
+  box-shadow: var(--field-shadow);
+}
+
+/* Opcional: hover suave en addon */
+.field-addon {
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.field-addon:hover {
+  background-color: #e5e7eb;
+}

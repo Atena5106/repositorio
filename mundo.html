@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejemplo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo"> RECEIVE</h1>
+      <!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Danger
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+      <!-- Menú hamburguesa -->
+      <label class="label_hamburguesa" for="menu_hamburguesa">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+             class="list_icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </label>
+      <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+      <ul class="ul_links">
+        <li><a href="#" class="link">Inicio</a></li>
+        <li><a href="#" class="link">Nosotros</a></li>
+        <li><a href="#" class="link">Servicios</a></li>
+        <li><a href="#contacto" class="link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="img1.jpg">s
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+      </div>
+    </div>
+  </div>
+  <article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </article>
+  <div class="fila">
+    <div class="columna">
+      <h2>Encabezado</h2>
+      <img src="postal.jpg" alt="tres">
+      <p>lorem lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="columna">
+      <h2>Encabezado</h2>
+      <img src="avion.jpg" alt="tres">
+      <p>xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="columna">
+      <h2>Encabezado</h2>
+      <img src="aguas.jpg" alt="tres">
+      <p>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="columna">
+      <h2>Encabezado</h2>
+      <img src="img.jpg" alt="tres">
+      <p>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+<center>
+<a href="inicio.html" target="_blank" class="password">
+  INICIAR SESIÓN
+</a>
+  <button class="cta-button">¡Únete Ahora!</button></center>
+  <section id="contacto" class="formulario-seccion">
+    <h2>Contáctanos</h2>
+    <form id="formulario-contacto">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      <div class="botones-form">
+        <button id="btn-enviar" aria-label="Enviar formulario">Enviar</button>
+        <button id="btn-borrar" aria-label="Borrar formulario">Borrar</button>
+      </div><br>
+  </section>
+  <footer>
+    &#169 2025
+  </footer>
+</body>
+</html>
